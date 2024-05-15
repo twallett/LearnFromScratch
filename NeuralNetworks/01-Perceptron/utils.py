@@ -5,7 +5,10 @@ from matplotlib.animation import FuncAnimation
 
 def plot_sse(error, xor = None):
     plt.plot(error ** 2)
-    plt.title("Perceptron SSE")
+    if xor:
+        plt.title("Perceptron XOR SSE")
+    else:
+        plt.title("Perceptron SSE")
     plt.xlabel("Iterations")
     plt.ylabel("SSE")
     if not os.path.exists('plots'):
@@ -35,8 +38,8 @@ def animate(inputs, targets, param, xor = None):
         
         ax.clear()
         
-        plt.scatter(p1_label_0, p2_label_0, label='Class 0')
-        plt.scatter(p1_label_1, p2_label_1, c='orange', label= 'Class 1')
+        plt.scatter(p1_label_0, p2_label_0, label='Class 1')
+        plt.scatter(p1_label_1, p2_label_1, c='orange', label= 'Class 2')
         
         ax.set_xlim([-4, 4])
         ax.set_ylim([-4, 4])
@@ -56,7 +59,10 @@ def animate(inputs, targets, param, xor = None):
         ax.add_artist(quiver_1)
         ax.axline((1, db_1), slope=db_slope)
         
-        plt.title("Perceptron")
+        if xor:
+            plt.title("Perceptron XOR")
+        else:
+            plt.title("Perceptron")
         plt.xlabel("$P1$")
         plt.ylabel("$P2$")
         plt.legend(loc = 'upper right')
