@@ -38,18 +38,18 @@ The Perceptron is a fundamental neural network model for solving linearly sepera
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_classification.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_anim.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_sse.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_sse.png" alt="Second GIF" width="100%">
     </td>
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_classification_XOR.gif" alt="Third GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_anim_xor.gif" alt="Third GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_sse_XOR.png" alt="Fourth GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_sse_xor.png" alt="Fourth GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -81,10 +81,10 @@ ADALINE is a significant improvement over the Perceptron, as it utilizes a conti
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/2_ADALINE/ADALINE_classification.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/02-ADALINE/plots/adaline_anim.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/2_ADALINE/ADALINE_sse.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/02-ADALINE/plots/adaline_sse.png" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -134,18 +134,15 @@ The MLP Regressor's purpose is to serve as a function approximator. The main obj
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_target.png" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/03-MLPRegressor/plots/MLPRegressor_target.png" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_target_predictions.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/03-MLPRegressor/plots/MLPRegressor_results.png" alt="Second GIF" width="100%">
     </td>
   </tr>
   <tr>
-    <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_sse.png" alt="Third GIF" width="100%">
-    </td>
-    <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_target_scatter.png" alt="Fourth GIF" width="100%">
+    <td style="width: 100%;">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/03-MLPRegressor/plots/MLPRegressor_mse.png" alt="Third GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -197,10 +194,10 @@ The MLP Classifier's purpose is to identify underlying patterns, or representati
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/4_MLP_Classifier/MLP_Classifier.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/04-MLPClassifier/plots/MLPClassifier_anim.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/4_MLP_Classifier/MLP_Classifier_loss.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/04-MLPClassifier/plots/MLPClassifier_crossentropy.png" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -226,10 +223,10 @@ Stochastic Gradient Descent is an iterative optimization method used to find the
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/twallett/Machine-Learning-From-Scratch/blob/main/Optimization/1_SGD/SGD_contour.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/01-SGD/plots/SGD_contour.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/twallett/Machine-Learning-From-Scratch/blob/main/Optimization/1_SGD/SGD_surface.gif" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/01-SGD/plots/SGD_surface.gif" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -251,10 +248,10 @@ Linear Minimization is an optimization technique that involves finding the minim
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/Optimization/2_Linear_minimization/Linear_minimization_contour.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/02-LinearMinimization/plots/LinearMinimization_contour.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/Optimization/2_Linear_minimization/Linear_minimization_surface.gif" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/02-LinearMinimization/plots/LinearMinimization_surface.gif" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -273,10 +270,10 @@ Newton's Method is an iterative optimization algorithm that uses second-order de
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/Optimization/3_Newtons_method/Newtons_method_contour.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/03-NewtonsMethod/plots/NewtonsMethod_contour.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/Optimization/3_Newtons_method/Newtons_method_surface.gif" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/03-NewtonsMethod/plots/NewtonsMethod_surface.gif" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
@@ -302,10 +299,10 @@ The Conjugate Gradient method is used to solve unconstrained optimization proble
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/Optimization/4_Conjugate_method/Conjugate_method_contour.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/04-ConjugateMethod/plots/ConjugateMethod_contour.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/Optimization/4_Conjugate_method/Conjugate_method_surface.gif" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/Optimization/04-ConjugateMethod/plots/ConjugateMethod_surface.gif" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>

@@ -1,4 +1,4 @@
-# Neural Networks
+## <u> Neural Networks </u>
 
 This subdirectory contains implementations and explanations of different neural network algorithms.
 
@@ -6,13 +6,13 @@ Each neural network implementation in this subdirectory comes with detailed expl
 
 For a detailed exploration of each algorithm, refer to the corresponding folders in this directory.
 
-## 1. Perceptron
+### 01-Perceptron
 
 The Perceptron is a fundamental neural network model for solving linearly seperable problems. This neural network architecture was developed in the late 1950's and is characterized by having weighted inputs and a threshold activation function. Another key feature is its decision boundary, a line, that is fast and reliable for the class of problems it can solve. A key limitation of this architecture, as evidence by the XOR problem, is, as hinted previously, its inability to solve problems that are not linearly seperable.
 
-### $\underline{Forwardpropagation}:$
-### $n = W \cdot p + b$
-### $a = hardlim(n)$
+#### $\underline{Forwardpropagation}:$
+#### $n = W \cdot p + b$
+#### $a = hardlim(n)$
 
 * $p$: The input vector.
 * $W$: The weight matrix.
@@ -21,10 +21,10 @@ The Perceptron is a fundamental neural network model for solving linearly sepera
 * $hardlim()$: The hardlim activation function.
 * $a$: The output vector.
 
-### $\underline{Weight \ updates}:$
-### $W^{new} = W^{old} + e \cdot p^T$
-### $b^{new} = b^{old} + e$
-### $where \ e = t - a$
+#### $\underline{Weight \ updates}:$
+#### $W^{new} = W^{old} + e \cdot p^T$
+#### $b^{new} = b^{old} + e$
+#### $where \ e = t - a$
 
 * $W^{old}$: The old weight matrix.
 * $W^{new}$: The new weight matrix.
@@ -36,29 +36,28 @@ The Perceptron is a fundamental neural network model for solving linearly sepera
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_classification.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_anim.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_sse.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_sse.png" alt="Second GIF" width="100%">
     </td>
   </tr>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_classification_XOR.gif" alt="Third GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_anim_xor.gif" alt="Third GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/1_Perceptron/Perceptron_sse_XOR.png" alt="Fourth GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/01-Perceptron/plots/perceptron_sse_xor.png" alt="Fourth GIF" width="100%">
     </td>
   </tr>
 </table>
 
-
-## 2. ADALINE (Adaptive Linear Neuron)
+### 02-ADALINE (Adaptive Linear Neuron)
 
 ADALINE is a significant improvement over the Perceptron, as it utilizes a continuous activation function and an adaptive weight adjustment mechanism embedded with the Least Mean Squares (LMS) algorithm. However, the ADALINE still faces the same difficulties as the perceptron given that it cannot solve problems that are not linearly seperable. 
 
-### $\underline{Forwardpropagation}:$
-### $a = purelin(W \cdot p + b)$
+#### $\underline{Forwardpropagation}:$
+#### $a = purelin(W \cdot p + b)$
 
 * $p$: The input vector.
 * $W$: The weight matrix.
@@ -66,9 +65,9 @@ ADALINE is a significant improvement over the Perceptron, as it utilizes a conti
 * $purelin()$: The purelin activation function.
 * $a$: The output vector.
 
-### $\underline{Weight \ updates}:$
-### $W_{k+1} = W_{k} - 2 \alpha e_{k} \cdot p_{k}^T$
-### $b_{k+1} = b_{k} - 2 \alpha e_{k}$
+#### $\underline{Weight \ updates}:$
+#### $W_{k+1} = W_{k} - 2 \alpha e_{k} \cdot p_{k}^T$
+#### $b_{k+1} = b_{k} - 2 \alpha e_{k}$
 
 * $W_{k}$: The weight matrix at iteration $k$.
 * $W_{k+1}$: The weight matrix at iteration $k+1$.
@@ -80,22 +79,22 @@ ADALINE is a significant improvement over the Perceptron, as it utilizes a conti
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/2_ADALINE/ADALINE_classification.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/02-ADALINE/plots/adaline_anim.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/2_ADALINE/ADALINE_sse.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/02-ADALINE/plots/adaline_sse.png" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
 
-## 3. MLP Regressor (Multi-Layer Perceptron Regressor)
+### 03-MLPRegressor (Multi-Layer Perceptron Regressor)
 
 The MLP Regressor's purpose is to serve as a function approximator. The main objective of this neural network architecture is to find an objective function that maps the inputs to its corresponding outputs. In this example, the controlled objective function of the target outputs is $f(x) = 1 + sin(\\frac{\pi}{4}x)$ and the function of the MLP regressor is to approximate such by adjusting its weights and biases correspondingly.
 
-### $\underline{Forwardpropagation}:$
-### $a^0 = p$
-### $a^{m+1} = f^{m+1}(W^{m+1} \cdot a^m + b^{m+1})\ for \ m = 0, 1, ..., M-1$
-### $a = a^M$
+#### $\underline{Forwardpropagation}:$
+#### $a^0 = p$
+#### $a^{m+1} = f^{m+1}(W^{m+1} \cdot a^m + b^{m+1})\ for \ m = 0, 1, ..., M-1$
+#### $a = a^M$
 
 * $p$: The input vector.
 * $a^m$: The output vector of layer $m$.
@@ -104,9 +103,9 @@ The MLP Regressor's purpose is to serve as a function approximator. The main obj
 * $f^{m+1}()$: The activation function of layer $m+1$.
 * $a$: The output vector.
 
-### $\underline{Backpropagation}:$
-### $s^{M} = F^{M} \cdot (n^{M}) \cdot e$
-### $s^{m} = F^{m} \cdot (n^{m}) \cdot (W^{m+1^{T}}) \cdot s^{m+1} \ for \ m = M-1, ..., 2, 1$
+#### $\underline{Backpropagation}:$
+#### $s^{M} = F^{M} \cdot (n^{M}) \cdot e$
+#### $s^{m} = F^{m} \cdot (n^{m}) \cdot (W^{m+1^{T}}) \cdot s^{m+1} \ for \ m = M-1, ..., 2, 1$
 
 * $s^{M}$: The sensitivity of output layer.
 * $F^{M}$: The derivative of the activation function of output layer.
@@ -118,9 +117,9 @@ The MLP Regressor's purpose is to serve as a function approximator. The main obj
 * $W^{m+1^{T}}$: The weight matrix of layer $m+1$ transposed.
 * $s^{m+1}$: The sensitivity of layer $m+1$.
 
-### $\underline{Weight \ updates}:$
-### $W_{k+1}^m = W_{k}^m - \alpha s^m \cdot (a^{{m-1}^T})$
-### $b_{k+1}^m = b_{k}^m - \alpha s^m$
+#### $\underline{Weight \ updates}:$
+#### $W_{k+1}^m = W_{k}^m - \alpha s^m \cdot (a^{{m-1}^T})$
+#### $b_{k+1}^m = b_{k}^m - \alpha s^m$
 
 * $W_{k}^m$: The weight matrix of layer $m$ at iteration $k$.
 * $W_{k+1}^m$: The weight matrix of layer $m$ at iteration $k+1$.
@@ -133,31 +132,28 @@ The MLP Regressor's purpose is to serve as a function approximator. The main obj
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_target.png" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/03-MLPRegressor/plots/MLPRegressor_target.png" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_target_predictions.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/03-MLPRegressor/plots/MLPRegressor_results.png" alt="Second GIF" width="100%">
     </td>
   </tr>
   <tr>
-    <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_sse.png" alt="Third GIF" width="100%">
-    </td>
-    <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/3_MLP_Regressor/MLP_Regressor_target_scatter.png" alt="Fourth GIF" width="100%">
+    <td style="width: 100%;">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/03-MLPRegressor/plots/MLPRegressor_mse.png" alt="Third GIF" width="100%">
     </td>
   </tr>
 </table>
 
-## 4. MLP Classifier (Multi-Layer Perceptron Classifier)
+### 04-MLPClassifier (Multi-Layer Perceptron Classifier)
 
 The MLP Classifier's purpose is to identify underlying patterns, or representations, from inputs and classify their corresponding target values correctly. One fundamental characteristic of this neural network architecture is the $softmax()$ activation function of the output layer. This activation function is useful for classification problems given that it exponentiates and normalizes target outputs to create a probability distribution for the target classes. In this example, the number of classes is $10$ (number of digits), and the function of the MLP Classifier is to learn the underlying representations to accurately classify each input to its corresponding target class.
 
-### $\underline{Forwardpropagation}:$
-### $a^0 = p$
-### $a^{m+1} = f^{m+1}(W^{m+1} \cdot a^m + b^{m+1}) \ for \ m = 0, 1, ..., M-2$
-### $a^M = softmax(W^{m+1} \cdot a^{M-1} + b^{m+1})\ for \ m = M-1$
-### $a = a^M$
+#### $\underline{Forwardpropagation}:$
+#### $a^0 = p$
+#### $a^{m+1} = f^{m+1}(W^{m+1} \cdot a^m + b^{m+1}) \ for \ m = 0, 1, ..., M-2$
+#### $a^M = softmax(W^{m+1} \cdot a^{M-1} + b^{m+1})\ for \ m = M-1$
+#### $a = a^M$
 
 * $p$: The input vector.
 * $a^m$: The output vector of layer $m$.
@@ -168,9 +164,9 @@ The MLP Classifier's purpose is to identify underlying patterns, or representati
 * $softmax()$: The softmax activation function.
 * $a$: The output vector.
 
-### $\underline{Backpropagation}:$
-### $s^{M} = a - t$
-### $s^{m} = F^{m} \cdot (n^{m}) \cdot (W^{m+1^{T}}) \cdot s^{m+1} \ for \ m = M-1, ..., 2, 1$
+#### $\underline{Backpropagation}:$
+#### $s^{M} = a - t$
+#### $s^{m} = F^{m} \cdot (n^{m}) \cdot (W^{m+1^{T}}) \cdot s^{m+1} \ for \ m = M-1, ..., 2, 1$
 
 * $s^{M}$: The sensitivity of output layer.
 * $t$: The target class vector.
@@ -181,9 +177,9 @@ The MLP Classifier's purpose is to identify underlying patterns, or representati
 * $W^{m+1^{T}}$: The weight matrix of layer $m+1$ transposed.
 * $s^{m+1}$: The sensitivity of layer $m+1$.
 
-### $\underline{Weight \ updates}:$
-### $W_{k+1}^m = W_{k}^m - \alpha s^m \cdot (a^{{m-1}^T})$
-### $b_{k+1}^m = b_{k}^m - \alpha s^m$
+#### $\underline{Weight \ updates}:$
+#### $W_{k+1}^m = W_{k}^m - \alpha s^m \cdot (a^{{m-1}^T})$
+#### $b_{k+1}^m = b_{k}^m - \alpha s^m$
 
 * $W_{k}^m$: The weight matrix of layer $m$ at iteration $k$.
 * $W_{k+1}^m$: The weight matrix of layer $m$ at iteration $k+1$.
@@ -196,10 +192,10 @@ The MLP Classifier's purpose is to identify underlying patterns, or representati
 <table>
   <tr>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/4_MLP_Classifier/MLP_Classifier.gif" alt="First GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/04-MLPClassifier/plots/MLPClassifier_anim.gif" alt="First GIF" width="100%">
     </td>
     <td style="width: 50%;">
-      <img src="https://github.com/Twallett/Machine-Learning/blob/main/NeuralNetworks/4_MLP_Classifier/MLP_Classifier_loss.png" alt="Second GIF" width="100%">
+      <img src="https://github.com/twallett/LearnFromScratch/blob/main/NeuralNetworks/04-MLPClassifier/plots/MLPClassifier_crossentropy.png" alt="Second GIF" width="100%">
     </td>
   </tr>
 </table>
