@@ -1,5 +1,24 @@
 # Learn From Scratch 
 
+## Folder Structure
+
+```bash
+.
+├── NeuralNetworks
+│   ├── 01-Perceptron
+│   ├── 02-ADALINE
+│   ├── 03-MLPRegressor
+│   ├── 04-MLPClassifier
+│   └── README.md
+├── Optimization
+│   ├── 01-SGD
+│   ├── 02-LinearMinimization
+│   ├── 03-NewtonsMethod
+│   ├── 04-ConjugateMethod
+│   └── README.md
+└── README.md
+```
+
 ## <u> Neural Networks </u>
 
 This subdirectory contains implementations and explanations of different neural network algorithms.
